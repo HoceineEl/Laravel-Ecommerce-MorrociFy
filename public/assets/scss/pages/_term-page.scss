@@ -1,0 +1,26 @@
+/*-------------------------------------------------
+  Terms-Condition Page CSS
+---------------------------------------------------*/
+.terms_condition_page {
+	.ec-common-wrapper {
+		padding: 30px;
+		border: 1px solid $border-color-4;
+		max-width: 1140px;
+		margin: 0 auto;
+		background-color: $card-bg-white;
+		border-radius: 5px;
+	}
+	.ec-cms-block {
+		p {
+			margin-bottom: 29px;
+			b {
+				font-weight: 500;
+			}
+		}
+		&:last-child {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

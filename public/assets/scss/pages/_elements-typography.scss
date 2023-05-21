@@ -1,0 +1,148 @@
+/*-------------------------------------------------
+  Element Typography Page CSS
+---------------------------------------------------*/
+.typography{
+	background-color: $card-bg-white;
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 30px;
+		font-family: "Montserrat";
+	}
+	.ec-fc{
+		color: $main-primary-color;
+	}
+	.ec-fw-normal{
+		font-weight: 500;
+	}
+
+	.ec-fw-bold{
+		font-weight: 700;
+	}
+	h1 {
+		font-size: 38px;
+	}
+	.ec-lb{
+		padding-left: 10px;
+		border-left: 5px solid;
+	}
+	.ec-rb{
+		padding-right: 10px;
+		border-right: 5px solid;
+		text-align: right;
+	}
+	.ec-disc,
+	.ec-decimal,
+	.ec-alpha,
+	.ec-roman,
+	.ec-greek,
+	.ec-hebrew{
+		padding: 5px 20px;
+		color: $text-color-777;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: justify;
+		letter-spacing: 1px;
+		font-family: 'Raleway', serif;
+	}
+	.ec-disc {
+		li{
+			margin-bottom: 15px;
+			list-style-type: disc;
+		}
+	}
+	.ec-decimal {
+		li{
+			margin-bottom: 15px;
+			list-style-type: decimal;
+		}
+	}
+	.ec-alpha {
+		li{
+			margin-bottom: 15px;
+			list-style-type: upper-alpha;
+		}
+	} 
+	.ec-roman {
+		li{
+			margin-bottom: 15px;
+			list-style-type: upper-roman;
+		}
+	}
+	.ec-greek {
+		li{
+			margin-bottom: 15px;
+			list-style-type: lower-greek;
+		}
+	}
+	.ec-hebrew {
+		li{
+			margin-bottom: 15px;
+			list-style-type: hebrew;
+		}
+	}
+	.ec-dl-blurbs {
+		display: grid;
+		dl {
+			counter-reset: count;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin: 0;
+			dt {
+				margin-top: 10px;
+				counter-increment: count;
+				color: $main-primary-color;
+				font-family: "Montserrat", sans-serif;
+				font-size: 25px;
+				text-transform: uppercase;
+			}
+				
+			dt::before {
+				content: counter(count, decimal-leading-zero) ".";
+				color: $main-primary-color;
+				margin-left: -1vw;
+				padding-right: 12px;
+			}
+			dd {
+				margin-left: 30px;
+				margin-bottom: 15px;
+				line-height: 28px;
+				font-size: 14px;
+			}
+		}
+		dl + dl {
+			counter-reset: counter 4;
+		}	
+	}
+	.ec-check-list {
+		margin: 0;
+		padding-left: 20px;
+		li {
+			margin-bottom: 15px;
+			padding-left: 20px;
+			position: relative;
+			list-style-type: none;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 5px;
+				height: 13px;
+				border-width: 0 2px 2px 0;
+				border-style: solid;
+				border-color: $main-primary-color;
+				transform-origin: bottom left;
+				transform: rotate(45deg);
+			}
+		}	
+	}
+	/* -----------/ END Product-DNC -----------*/ 
+	p {
+		margin-bottom: 30px;
+		display: inline-block;
+		margin: 0 0 1em 0;
+		font-size: 15px;
+		color: $text-color-777;
+		line-height: 28px;
+	}
+}

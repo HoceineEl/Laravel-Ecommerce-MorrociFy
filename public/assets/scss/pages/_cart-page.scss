@@ -1,0 +1,375 @@
+/*-------------------------------------------------
+  Cart Page CSS
+---------------------------------------------------*/
+.cart_page {
+	.shop-all-btn {
+		margin-bottom: 0;
+		border-radius: 5px;
+	}
+	.ec-sidebar-wrap {
+		border-radius: 5px;
+		h3 {
+			font-size: $fontsize-20px;
+			font-weight: $font-weight-400;
+			letter-spacing: 0;
+			margin-bottom: 21px;
+		}
+		border: 1px solid $border-color-4;
+		.ec-sb-block-content {
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+		.ec-ship-title {
+			margin-bottom: 0;
+			font-size: 17px;
+			font-weight: $font-weight-700;
+			letter-spacing: 0;
+			border-bottom: 1px solid $border-color-4;
+			color: $main-text-color;
+			padding-bottom: 15px;
+			position: $relative;
+			display: flex;
+			align-items: $textcenter;
+			justify-content: space-between;
+			&::after {
+				content: '\f107';
+				position: $relative;
+				font-family: $EcIcons;
+				font-size: $fontsize-18px;
+				color: $main-second-text-color;
+				font-weight: $font-weight-400;
+			}
+		}
+	}
+}
+.ec-cart-content {
+	.table-content {
+		table {
+			border: 1px solid $border-color-5;
+			width: $width-100;
+			background-color: $card-bg-white;
+			border-radius: 5px;
+    		overflow: hidden;
+			thead {
+				>tr {
+					background-color: $header-bg-color;
+					border: 1px solid $border-color-5;
+					>th {
+						border-top: medium none;
+						color: $main-text-color;
+						font-size: 15px;
+						font-weight: 500;
+						padding: 15px 14px 12px;
+						text-align: $textleft;
+						text-transform: $capitalize;
+						vertical-align: middle;
+						white-space: nowrap;
+						line-height: 1;
+						letter-spacing: 0;
+					}
+				}
+			}
+			tbody {
+				>tr {
+					border-bottom: 1px solid $border-color-5;
+					td {
+						color: $main-text-color;
+						font-size: 16px;
+						padding: 15px 14px;
+						text-align: $textleft;
+						.ec-cart-pro-img {
+							width: 61px;
+						}
+						.cart-qty-plus-minus {
+							border: 1px solid $border-color-4;
+							display: inline-block;
+							height: 35px;
+							overflow: hidden;
+							padding: 0;
+							position: $relative;
+							width: 84px;
+							display: flex;
+							align-items: $textcenter;
+							justify-content: space-between;
+							margin: 0 auto;
+							input {
+								background: transparent none repeat scroll 0 0;
+								border: medium none;
+								color: $main-text-color;
+								float: $floatleft;
+								font-size: 14px;
+								height: auto;
+								margin: 0;
+								padding: 0;
+								text-align: $textcenter;
+								width: 40px;
+								outline: none;
+								font-weight: 600;
+								line-height: 38px;
+							}
+							.ec_cart_qtybtn {
+								color: $main-text-color;
+								float: $floatleft;
+								font-size: $fontsize-20px;
+								height: auto;
+								margin: 0;
+								padding: 0;
+								width: 40px;
+								height: 38px;
+								display: flex;
+								flex-direction: column;
+								align-items: $textcenter;
+								justify-content: center;
+							}
+							.ec_qtybtn {
+								width: $width-100;
+								display: flex;
+								align-items: $textcenter;
+								justify-content: center;
+								cursor: pointer;
+								font-size: 0;
+								color: $main-text-color;
+								height: 19px;
+								position: $relative;
+								&:before {
+									width: $width-100;
+									display: flex;
+									align-items: $textcenter;
+									justify-content: center;
+									cursor: pointer;
+									font-size: $fontsize-20px;
+									color: $main-text-color;
+									height: 19px;
+									position: $absolute;
+									top: 0;
+									left: 0;
+									right: 0;
+									content: '';
+									font-family: $EcIcons;
+									overflow: hidden;
+								}
+							}
+							.dec.ec_qtybtn {
+								&:before {
+									padding-bottom: 4px;
+									content: '\f107';
+								}
+							}
+							.inc.ec_qtybtn {
+								&:before {
+									padding-top: 4px;
+									content: '\f106';
+								}
+							}
+						}
+					}
+					td.ec-cart-pro-name {
+						width: 40%;
+						a {
+							color: $main-text-color;
+							font-weight: $font-weight-400;
+							text-decoration: $textdecoration;
+							// white-space: nowrap;
+							// overflow: hidden;
+							// text-overflow: ellipsis;
+							font-size: 14px;
+							display: flex;
+							line-height: 1.5;
+							letter-spacing: 0.6px;
+							align-items: center;
+						}
+					}
+					td.ec-cart-pro-subtotal {
+						color: $main-secondary-color;
+						font-weight: 500;
+    					font-size: 15px;
+					}
+					td.ec-cart-pro-price {
+						color: $main-secondary-color;
+						font-weight: 500;
+    					font-size: 15px;
+					}
+					td.ec-cart-pro-qty {
+						.qty-plus-minus {
+							display: inline-block;
+							height: 40px;
+							padding: 0;
+							position: $relative;
+							width: 110px;
+						}
+					}
+					td.ec-cart-pro-remove {
+						width: 90px;
+						text-align: $textright;
+						a {
+							font-size: 22px;
+							margin: 0 auto;
+							color: $main-secondary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.ec-cart-update-bottom {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0 0;
+	}
+}
+.ec-cart-update-bottom {
+	>a {
+		color: $main-text-color;
+		display: inline-block;
+		text-decoration: underline;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 500;
+		letter-spacing: 0.8px;
+	}
+	.btn {
+		display: flex;
+		height: 40px;
+		line-height: 40px;
+		text-align: $textcenter;
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: $uppercase;
+		justify-content: center;
+		align-items: $textcenter;
+		min-width: 150px;
+	}
+}
+.ec-cart-form {
+	label {
+		margin-bottom: 9px;
+		color: $main-text-color;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0;
+		line-height: 1;
+	}
+	padding-top: 19px;
+	p {
+		color: $text-color-777;
+		font-size: 14px;
+		margin-bottom: 10px;
+		letter-spacing: 0;
+	}
+	input {
+		background-color: transparent;
+		border: 1px solid $border-color-4;
+		color: $main-text-color;
+		font-size: $fontsize-14px;
+		margin-bottom: 26px;
+		padding: 0 15px;
+		width: $width-100;
+		outline: none;
+	}
+	select {
+		padding: 0 15px;
+	}
+	.ec-cart-select-inner {
+		position: $relative;
+		display: flex;
+		width: $width-100;
+		height: 50px;
+		border-radius: 0;
+		border: 1px solid $border-color-4;
+		font-size: $fontsize-14px;
+		padding: 0;
+		margin-bottom: 28px;
+		&::after {
+			content: '\f107';
+			position: $absolute;
+			font-family: $EcIcons;
+			top: 0;
+			right: 0;
+			padding: 0 10px;
+			cursor: pointer;
+			pointer-events: none;
+			font-size: $fontsize-18px;
+			display: flex;
+			height: 50px;
+			line-height: 1;
+			justify-content: center;
+			align-items: $textcenter;
+			color: $main-second-text-color;
+		}
+	}
+}
+.ec-cart-summary-bottom {
+	.ec-cart-summary {
+		>* {
+			display: flex;
+			justify-content: space-between;
+			align-items: $textcenter;
+			margin-bottom: 10px;
+		}
+		.text-left {
+			color: $main-text-color;
+			font-size:14px;
+			line-height: 24px;
+			letter-spacing: 0;
+		}
+		.text-right {
+			color: $main-secondary-color;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 500;
+			a {
+				color: #eb2629;
+				font-weight: 500;
+			}
+		}
+		.ec-cart-summary-total {
+			border-top: 1px solid $border-color-4;
+			padding-top: 19px;
+			margin-bottom: 0;
+			margin-top: 16px;
+			.text-left {
+				font-size: 16px;
+    			font-weight: 500;
+			}
+			.text-right {
+				font-size: 16px;
+    			font-weight: 500;
+			}
+		}
+	}
+}
+.ec-cart-summary-bottom {
+	.ec-cart-summary {
+		.ec-cart-coupan-content {
+			display: none;
+			margin-bottom: 0;
+		}
+	}
+}
+.ec-cart-coupan-form {
+	display: flex;
+	border: 1px solid $border-color-4;
+	padding: 5px;
+	.ec-coupan {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 35px;
+		height: 35px;
+		color: $main-second-text-color;
+		font-size: 14px;
+		width: 100%;
+		border: 0;
+		background: transparent;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		letter-spacing: 0.5px;
+	}
+	.button {
+		font-size: 16px;
+		text-align: center;
+		padding: 0 15px;
+	}
+}

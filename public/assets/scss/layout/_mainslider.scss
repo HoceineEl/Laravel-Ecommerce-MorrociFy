@@ -1,0 +1,343 @@
+/*-------------------------------------------------
+  Site Main Slider CSS
+---------------------------------------------------*/
+.ec-slide-item {
+	width: 100%;
+	height: 80vh;
+	position: relative;
+}
+.swiper-slide {
+    overflow: auto;
+}
+.ec-slide-1 {
+	width: 100%;
+	background-image: url("../images/main-slider-banner/1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow-y: hidden;	
+}
+.ec-slide-2 {
+	background-image: url("../images/main-slider-banner/2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+.ec-slide-3 {
+	background-image: url("../images/main-slider-banner/3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+/*----  Main Slider Style  ----*/
+.ec-main-slider {
+	.container {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	* {
+		direction: ltr;
+	}
+}
+.ec-slide-content {
+	position: relative;
+	z-index: 9;
+	.ec-slide-title {
+		margin-bottom: 25px;
+		padding-top: 25px;
+		color: $main-secondary-color;
+		font-size: 65px;
+		font-weight: 600;
+		letter-spacing: 2px;
+		font-family: $fontfamilyfjallaone;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			height: 5px;
+			width: 50px;
+			margin: 0 auto;
+			background: $main-primary-color;
+			left: 4px;
+			right: auto;
+		}
+	}
+	.ec-slide-stitle {
+		font-size: 50px;
+		font-weight: 400;
+		color: $main-text-color;
+		margin-bottom: 11px;
+		text-transform: uppercase;
+		letter-spacing: 1.6px;
+	}
+	p {
+		max-width: 350px;
+		font-size: 17px;
+		color: $main-second-text-color;
+		line-height: 1.5;
+		letter-spacing: 0;
+		font-weight: 300;
+	}
+	.btn {
+		font-size: 18px;
+		text-transform: uppercase;
+		padding: 0 19px;
+		letter-spacing: 0;
+		margin-top: 34px;
+	}
+}
+.main-slider-dot {
+	.swiper-pagination-bullets {
+		display: none;
+	}
+	.swiper-pagination-bullet {
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		border-radius: 100%;
+		background: transparent;
+		opacity: 1;
+		border: 1px solid #000000;
+		margin: 0 5px;
+		box-shadow: none;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: $main-secondary-color;
+			border-color: $main-secondary-color;
+		}
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		background-color: $main-secondary-color;
+		border-color: $main-secondary-color;
+	}
+}
+.main-slider-dot.dot-color-white {
+	.swiper-pagination-bullet {
+		border: 1px solid #ffffff;
+		&:hover {
+			background-color: $main-secondary-color;
+			border-color: $main-secondary-color;
+		}
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		background-color: $main-secondary-color;
+		border-color: $main-secondary-color;
+	}
+}
+.main-slider-nav {
+	position: relative;
+	.swiper-button-next {
+		&:after {
+			content: "\f105";
+			font-family: "EcIcons";
+			font-size: 30px;
+			line-height: 1;
+			outline: 0;
+		}
+		outline: 0;
+		left: auto;
+		right: -20px;
+	}
+	.swiper-button-prev {
+		&:after {
+			content: "\f104";
+			font-family: "EcIcons";
+			font-size: 30px;
+			line-height: 1;
+			outline: 0;
+		}
+		outline: 0;
+		right: auto;
+		left: -20px;
+	}
+	.swiper-buttons {
+		.swiper-button-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 9;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s;
+			margin: auto;
+			border-radius: 0;
+			text-align: center;
+			color: $white-text-color;
+			background-color: $main-primary-color;
+			&:hover {
+				background-color: $main-secondary-color;
+				color: $white-text-color;
+			}
+		}
+		.swiper-button-prev {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 9;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s;
+			margin: auto;
+			border-radius: 0;
+			text-align: center;
+			color: $white-text-color;
+			background-color: $main-primary-color;
+			&:hover {
+				background-color: $main-secondary-color;
+				color: $white-text-color;
+			}
+		}
+	}
+	&:hover {
+		.swiper-button-next {
+			opacity: 1;
+			visibility: visible;
+			right: 10px;
+		}
+		.swiper-button-prev {
+			opacity: 1;
+			visibility: visible;
+			left: 10px;
+		}
+	}
+}
+.main-slider-nav.small-nav {
+	.swiper-button-next {
+		&:after {
+			font-size: 14px;
+		}
+	}
+	.swiper-button-prev {
+		&:after {
+			font-size: 14px;
+		}
+	}
+	.swiper-buttons {
+		.swiper-button-next {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			&:hover {
+				background-color: $main-secondary-color;
+				color: $white-text-color;
+			}
+		}
+		.swiper-button-prev {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			&:hover {
+				background-color: $main-secondary-color;
+				color: $white-text-color;
+			}
+		}
+	}
+}
+
+/*----  Button Style  ----*/
+.btn {
+	padding: 0;
+	font-size: 16px;
+	border-radius: 0;
+	height: 45px;
+	border: 0;
+	font-weight: 500;
+	line-height: 45px;
+	padding-left: 15px;
+	padding-right: 15px;
+	&:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+}
+.btn-primary {
+	color: $white-text-color;
+	background-color: $main-primary-color;
+	border-color: $main-primary-color;
+	&:hover {
+		color: $white-text-color;
+		background-color: $main-secondary-color;
+		border-color: $main-secondary-color;
+	}
+	&:focus {
+		color: $white-text-color;
+		background-color: $main-primary-color;
+		border-color: $main-primary-color;
+	}
+	&:active {
+		color: $white-text-color;
+		background-color: $main-primary-color;
+		border-color: $main-primary-color;
+	}
+}
+.btn-color-dark {
+	background-color: #4d4d4d;
+	border-color: #4d4d4d;
+	color: $white-text-color;
+	font-weight: 500;
+	font-size: 14px;
+	width: 130px;
+	height: 45px;
+	line-height: 45px;
+}
+.btn-hover-color-primary {
+	&:hover {
+		color: $white-text-color;
+		background-color: $main-secondary-color;
+		border-color: $main-secondary-color;
+	}
+}
+.btn-check {
+	&:focus {
+		+ {
+			.btn {
+				outline: 0;
+				box-shadow: none;
+			}
+			.btn-primary {
+				color: $white-text-color;
+				background-color: $main-primary-color;
+				border-color: $main-primary-color;
+			}
+		}
+	}
+	&:checked {
+		+ {
+			.btn-primary {
+				color: $white-text-color;
+				background-color: $main-primary-color;
+				border-color: $main-primary-color;
+			}
+		}
+	}
+	&:active {
+		+ {
+			.btn-primary {
+				color: $white-text-color;
+				background-color: $main-primary-color;
+				border-color: $main-primary-color;
+			}
+		}
+	}
+}
+.btn-primary.active {
+	color: $white-text-color;
+	background-color: $main-primary-color;
+	border-color: $main-primary-color;
+}
+.show {
+	>.btn-primary.dropdown-toggle {
+		color: $white-text-color;
+		background-color: $main-primary-color;
+		border-color: $main-primary-color;
+	}
+}

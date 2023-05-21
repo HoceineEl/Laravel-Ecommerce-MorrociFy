@@ -1,0 +1,326 @@
+/*-------------------------------------------------
+    Chat Boat
+---------------------------------------------------*/
+.ec-chat {
+	position: fixed;
+	bottom: 70px;
+    right: 15px;
+	margin: 0 auto;
+	width: 290px;
+	height: 400px;
+	background: $default-bg;
+	box-sizing: border-box;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+	z-index: 16;
+	.ec-reminder {
+		padding: 15px;
+		display: block;
+		text-align: center;
+		font-weight: 600;
+		color: $default-bg;
+		background-color: $main-primary-color-2;
+	}
+	.ec-chatbox {
+		position: relative;
+		padding: 10px 5px 50px;
+		height: calc(100% - 50px - 28px);
+		overflow-y: auto;
+		background: #f1f1f1;
+		scrollbar-color: $main-primary-color-2;
+		scrollbar-width: thin;
+		.messages-wrapper {
+			display: grid;
+		}
+		.status {
+			border: 1px solid $main-primary-color-2;
+			width: 150px;
+			border-radius: 50px;
+			padding: 6px 10px;
+			font-size: 12px;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 15px;
+			color: $main-text-color;
+			background: $default-bg;
+		}
+		.message {
+			position: relative;
+			margin: 15px 0;
+			.name {
+				position: relative;
+				max-width: 80%;
+				padding: 5px 10px;
+				font-size: 14px;
+				font-weight: bold;
+				.user-name {
+					margin-bottom: 0;
+					font-size: 13px;
+					font-weight: 600;
+				}
+				.user-text {
+					margin-bottom: 0;
+					font-size: 12px;
+					font-weight: 400;
+					text-align: left;
+				}
+			}
+			.text {
+				font-size: 14px;
+				padding: 5px;
+				vertical-align: middle;
+				width: calc(100% - 10px - 48px);
+				margin-left: 48px;
+				overflow-wrap: break-word;
+				word-wrap: break-word;
+				word-break: break-word;
+			}
+			.avatar {
+				width: 40px;
+				height: 40px;
+				float: left;
+				padding: 5px;
+				border-radius: 50%;
+				background: $default-bg;
+				margin: 0 10px 5px 10px;
+				.chat-user-img {
+					width: 100%;
+				}
+			}
+		}
+		.you {
+			.name {
+				background-color: $main-primary-color-2;
+				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
+				color: $default-bg;
+				border-radius: 0 15px 15px 15px;
+				float: left;
+				align-self: flex-start;
+				display: table;
+			}
+			.msg-time {
+				position: absolute;
+				padding-top: 0;
+				left: 0;
+				bottom: -16px;
+				font-size: 11px;
+				color: #999;
+				font-weight: 400;
+			}
+		}
+		.them {
+			text-align: right;
+			.name {
+				background-color: $default-bg;
+				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
+				color: $main-text-color;
+				border-radius: 15px 0px 15px 15px;
+				float: right;
+				align-self: flex-end;
+				display: table;
+				.user-text {
+					text-align: right;
+				}
+			}
+			.avatar {
+				background-size: cover;
+				float: right;
+			}
+			.text {
+				margin-left: 0;
+				margin-right: 48px;
+			}
+			.msg-time {
+				position: absolute;
+				right: 0;
+				bottom: -16px;
+				font-size: 11px;
+				padding-top: 0;
+				color: #999;
+				font-weight: 400;
+			}
+		}
+	}
+	.ec-reply {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		input[type=text] {
+			width: 100%;
+			background: $default-bg;
+			padding: 10px 80px 10px 15px;
+			resize: none;
+			border-width: 1px 0 0 0;
+			border-style: solid;
+			border-color: $default-bg;
+			color: $main-text-color;
+			outline: none;
+			font-weight: normal;
+			font-size: 13px;
+			transition: border-color 0.5s ease;
+		}
+		button {
+			&.send {
+				white-space: nowrap;
+				position: absolute;
+				z-index: 1;
+				top: 10px;
+				right: 10px;
+				text-align: center;
+				border: 2px solid $main-primary-color-2;
+				color: $main-primary-color-2;
+				background: $default-bg;
+				font-size: 12px;
+				font-weight: 600;
+				padding: 4px;
+				width: 60px;
+				&:active {
+					padding-top: 2px;
+				}	
+			}
+			&:hover {
+				color: $default-bg;
+				background: $main-primary-color-2;
+			}
+		}
+	}
+	.ec-typing {
+		color: $main-text-color;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		margin: 0 0 6px 2px;
+		font-size: 12px;
+	}
+	.ec-setuser {
+		display: grid;
+		position: absolute;
+		margin: 0 auto;
+		width: 100%;
+		padding: 30px;
+		border-radius: 2px;
+		z-index: 3;
+		height: 100%;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		background-color: $main-primary-color-2;
+		.welcome-text {
+			margin-bottom: 10px;
+			color: $default-bg;
+			font-size: 14px;
+    		font-weight: 300;
+		}
+		.form-control {
+			margin-bottom: 1.5rem !important;
+			border-radius: 0;
+		}
+		input {
+			&.form-control {
+				height: 45px;
+				padding: 5px 15px;
+				font-size: 14px;
+				color: $tab-text-color;
+				border: 1px solid $default-bg;
+				border-radius: 0;
+			}
+		}
+		button {
+			height: 45px;
+			border: 2px solid $default-bg;
+			border-radius: 5px;
+			padding: 5px;
+			line-height: 10px;
+			color: $default-bg;
+			border-radius: 0;
+			background: transparent;
+			font-weight: 500;
+			-webkit-transition: all 0.3s ease 0s;
+			-ms-transition: all 0.3s ease 0s;
+			-o-transition: all 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				color: $tab-text-color;
+				background-color: $default-bg;
+				border-color: $default-bg;
+			}
+		}
+		button:active,
+		button:focus {
+			color: $tab-text-color;
+			background-color: $default-bg;
+			border-color: $default-bg;
+			box-shadow: none;
+		}
+		p {
+			width: 100%;
+			font-size: 20px;
+			text-align: center;
+			padding: 0 0 10px;
+		}
+	}
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	::-webkit-scrollbar-track {
+		background: rgba(66, 66, 66, 0.5);;
+		box-shadow: inset 0 0 4px rgba(66, 66, 66, 0.2);
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgba(66, 66, 66, 0.5);;
+		box-shadow: inset 0 0 1px rgba(66, 66, 66, 0.1);
+	}
+}
+.ec-form {
+	&:focus {
+		border-color: $default-bg;
+		box-shadow: none;
+	}
+}
+.ec-dim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $main-second-text-color;
+	opacity: 0.75;
+	z-index: 1;
+}
+.ec-float-chat {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	right: 15px;
+	bottom: 15px;
+	padding: 2px;
+	background: $default-bg;
+	background-color: $main-primary-color-2;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	z-index: 16;
+	.ec-chat-icon {
+		background: transparent;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		.ec-float-img {
+			width: 100%;
+			padding: 5px;
+			fill: $default-bg;
+			&:hover {
+				fill: $main-primary-color-2;
+			}
+		}
+		i {
+			color: $default-bg;
+			font-size: 17px;
+    		line-height: 40px;
+			&:hover {
+				color: $main-primary-color-2;
+			}
+		}
+	}
+	&:hover {
+		.ec-chat-icon {
+			background: $default-bg;
+		}
+	}
+}

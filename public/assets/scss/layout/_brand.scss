@@ -1,0 +1,45 @@
+/*-------------------------------------------------
+  Brand Section CSS
+---------------------------------------------------*/
+.ec-brand-area {
+	display: block;
+}
+.ec-brand-item {
+	img {
+		margin: 0 auto;
+		background-color: $card-bg-white;
+		border: 1px solid $border-color-1;
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+		outline: 0;
+		border-radius: 5px;
+	}
+	&:hover {
+		img {			
+			box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+			-webkit-box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+			-moz-box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+		}
+	}
+}
+.ec-brand-outer {
+	.ec-brand-item {
+		.ec-brand-img {
+			padding: 0 15px;
+		}
+	}
+	.slick-arrow {
+		height: 100%;
+		top: 0;
+		display: none !important;
+	}
+	.slick-arrow.slick-prev {
+		left: -30px;
+	}
+	.slick-arrow.slick-next {
+		right: -30px;
+	}
+}
+li.ec-brand-item {
+	display: block !important;
+}

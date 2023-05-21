@@ -1,0 +1,132 @@
+/*-------------------------------------------------
+  Testimonial Section CSS
+---------------------------------------------------*/
+section.ec-test-section {
+	background: #f9f9f9;
+}
+.ec-test-section {
+	.ec-test-inner {
+		max-width: 730px;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+	.ec-test-item {
+		max-width: 1140px;
+		margin: 0 auto;
+		background: $white-color;
+		padding: 29px 25px;
+		position: $relative;
+		border-radius: 5px;
+		border: 1px solid $border-color-1;
+	}
+	.slick-slide {
+		padding: 27px 0;
+	}
+	.ec-test-desc {
+		font-size: 15px;
+		color: $main-second-text-color;
+		line-height: 26px;
+		letter-spacing: 0;
+		margin-bottom: 15px;
+	}
+	.ec-test-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.ec-test-name {
+		font-family: 'Montserrat';
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 6px;
+		color: $main-primary-color;
+		letter-spacing: 0.6px;
+		line-height: 1.2;
+	}
+	.ec-test-designation {
+		font-size: $fontsize-16px;
+		color: $main-text-color;
+		line-height: 1.2;
+		letter-spacing: 0.5px;
+		margin-bottom: 8px;
+	}
+	.ec-test-rating {
+		i {
+			font-size: 11px;
+			margin: 0 0.5px;
+		}
+		margin: 0 auto;
+	}
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		align-items: $textcenter;
+		li {
+			width: 100px;
+			background-color: $white-color;
+			border: 3px solid $main-secondary-color;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+			display: inline-block;
+			height: 100px;
+			overflow: hidden;
+			position: $relative;
+			cursor: pointer;
+			transform: scale(0.7);
+			transition: all 0.3s ease 0s;
+			opacity: 0.5;
+			&:hover {
+				margin: 0 15px;
+				transform: scale(1);
+				opacity: 1;
+			}
+			img {
+				max-width: $width-100;
+			}
+		}
+		li.slick-active {
+			margin: 0 15px;
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+#ec-testimonial-slider {
+	text-align: $textcenter;
+}
+.ec-test-inner {
+	.ec-test-img {
+		display: none;
+	}
+}
+.svg_img.test_svg, .fi-rr-quote-right {
+	position: $absolute;
+	width: 45px;
+	height: auto;
+	fill: $main-secondary-color;
+}
+.svg_img.test_svg.top {
+	top: -24px;
+	left: 63px;
+	right: auto;
+}
+.fi-rr-quote-right.top {
+	top: -38px;
+    left: 63px;
+    right: auto;
+    font-size: 41px;
+    transform: rotate(180deg);
+}
+.svg_img.test_svg.bottom {
+	bottom: -27px;
+	right: 88px;
+	left: auto;
+}
+.fi-rr-quote-right.bottom {
+	bottom: -38px;
+    right: 88px;
+    left: auto;
+    font-size: 41px;
+}

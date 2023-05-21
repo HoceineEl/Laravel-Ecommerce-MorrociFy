@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------------------------
+    Background Image-2
+-----------------------------------------------------------------------------------*/
+.body-bg-2 {
+  background-image: url(../../images/bg/background-2.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=bg-2.css.map */

@@ -1,0 +1,27 @@
+/*-------------------------------------------------
+  About Us Page CSS
+---------------------------------------------------*/
+.ec-cms-block {
+	background-color: $card-bg-white;
+	.ec-cms-block-title {
+		margin-bottom: 14px;
+		color: $text-color-777;
+		font-size: $fontsize-18px;
+		line-height: 24px;
+		font-weight: $font-weight-700;
+		letter-spacing: 0;
+		text-align: left;
+		font-family: 'Montserrat';
+	}
+	p {
+		font-size: 14px;
+		color: $main-second-text-color;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 0;
+		text-align: left;
+	}
+	.a-img{
+		border-radius: 5px;
+	}
+}

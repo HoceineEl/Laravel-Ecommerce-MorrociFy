@@ -1,0 +1,224 @@
+//-------------------------------------------------
+// Common Default Variable SCSS
+//-------------------------------------------------
+
+// Font Family
+$fontfamilyfjallaone: "Fjalla One";
+$fontfamilymontserrat: "Montserrat";
+$fontfamilypoppins: "Poppins, sans-serif";
+$fontfamily: "Poppins, sans-serif";
+
+// iconfont
+$EcIcons: "EcIcons";
+
+// Site main Color
+$main-primary-color: #3474d4;
+$main-primary-trans-color: rgba(68, 68, 68, .7);
+$main-secondary-color: #555;
+
+// Site main Color for demo 2
+$main-primary-color-2: #e58487;
+$main-secondary-color-2: #202020;
+
+// Site main Color for demo 3
+$main-primary-color-3: #ffbf7f;
+$main-secondary-color-3: #142f41;
+
+// Site main Color for demo 4
+$main-primary-color-4: #00969b;
+$main-secondary-color-4: #222;
+
+// Site main Color for demo 5
+$main-primary-color-5: #0d4fcf;
+$main-secondary-color-5: #fdd330;
+
+// Site main Color for demo 6
+$main-primary-color-6: #46c389;
+$main-secondary-color-6: #222;
+
+// Site main Color for demo 7
+$main-primary-color-7: #1c8855;
+$main-secondary-color-7: #ff909d;
+
+// Site main Color for demo 8
+$main-primary-color-8: #ff909d;
+$main-secondary-color-8: #222;
+
+// Site main Color for demo 9
+$main-primary-color-9: #ed5565;
+$main-secondary-color-9: #000;
+
+// Site main Color for demo 9
+$main-primary-color-10: #f3825d;
+// $main-primary-color-10: #fbb71e;
+$main-secondary-color-10: #000;
+
+// different Themes Color
+$theme-1-color: #3474d4;
+$theme-2-color: #7f77fd;
+$theme-3-color: #ff764b;
+$theme-4-color: #009688;
+$theme-5-color: #db3a5d;
+
+// Variables
+// ---------
+$animation-timing-function: cubic-bezier(.4,0,.2,1);
+$animation-duration: 1s;
+
+// Site main text Color
+$main-text-color: #444444; // Site main Text color
+$main-second-text-color: #777777; // Site second Text color
+$el-main-text-color: #777;
+$header-background-color: #f6f6f6; // Site header background color
+$footer-title-color: #202b3a; // Site Footer title color
+$el-product-bg: #fff;
+$white-background-color: #ffffff; // white background color
+$white-text-color: #ffffff; // white text color
+
+$flot-btn-bg: #ffffff; // flot cart button background color
+$cart-count-text-color: #ffffff; // flot cart count text color
+
+$recent-purchase-bg: #ffffff; // recent purchase white background color
+$recent-title-white: #777; // recent purchase title white color
+$recent-sub-title-white: #444; // recent purchase sub title white color
+$card-bg-white: #fff;
+$breadcrumb-background-color: #efefef; // Site breadcrumb background color
+
+// Site Black & white Color
+$white-color: #ffffff;
+$black-color: #000000;
+$text-color-777: #777;
+$text-color-999: #999;
+
+// Description on shop page
+$description-bg: #f5f5f5;
+$description-text: #777;
+
+// Site Header Bg Color
+$header-bg-color: #ffffff;
+
+// Site Footer Title Color
+$footer-heading-color: #202b3a; 
+
+// Site Section Heading FontSize
+$section-heading-fontsize: 30px;
+$section-sub-heading-fontsize: 63px;
+
+// Site Bootstrap h1 h2 h3 h4 h5 h6 Color
+$default-heading-color: #212121;
+
+// Site background transparent
+$transparent: transparent;
+
+// Site Border Color
+$border-color-1: #eeeeee;
+$border-color-2: #dddddd;
+$border-color-3: #d9d9d9;
+$border-color-4: #ededed;
+$border-color-5: #ebebeb;
+$border-color-6: #f1f1f1;
+$border-color-7: #f4f4f4;
+$default-border-color: #d9d9d9;
+
+// Social Site Color
+$main-fb-color: #3b5998;
+$main-twitter-color: #1da1f2;
+$main-instagram-color: #e44a73;
+$main-linkedin-color: #0073b2;
+
+// Site Font-Size
+$site-default-font-size: 14px;
+$section-title-font-size: 36px;
+$section-sub-title-font-size: 63px;
+$breadcrumb-font-size: 39px;
+$product-title-font-size: 20px;
+$product-price-font-size: 18px;
+$sidebar-title-font-size: 18px;
+
+// Site fontsize
+$fontsize-12px: 12px;
+$fontsize-14px: 14px;
+$fontsize-16px: 16px;
+$fontsize-18px: 18px;
+$fontsize-20px: 20px;
+$fontsize-22px: 22px;
+
+// Site font-weight
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+$liststyle: none;
+$textdecoration: none;
+
+// Site text aling
+$textcenter: center;
+$textright: right;
+$textleft: left;
+
+// Site text transform
+$uppercase: uppercase;
+$capitalize: capitalize;
+
+//Site flote Direction
+$floatleft: left;
+$floatright: right;
+
+// Site position
+$absolute: absolute;
+$relative: relative;
+
+// Site Width
+$width-100: 100%;
+
+// Site direction
+$ltr: ltr;
+$rtl: rtl;
+
+$alpha-06: 0.06;
+$alpha-6: 0.6;
+$alpha-20: 0.2;
+$alpha-15: 0.15;
+$alpha-45: 0.45;
+$alpha-1: 0.1;
+$alpha-5: 0.5;
+$alpha-2: 0.2;
+
+// Demo 2 variable 
+
+$Icon-fontfamily-EcIcons: "EcIcons";
+$header-top-bg-color: #f5f5f5;
+$default-bg: #fff;
+$tab-text-color: #444444; //  Site tab Text color 
+$services-background-color: #f9f9f9; //  Site services background color 
+
+// Demo 3 variable 
+$card-box-color: #fff;
+$white-bg: #fff;
+$boxshadow-color-1: #231f20;
+$boxshadow-color-2: #000000;
+$border-radius-1: 23px;
+$border-radius-2: 20px;
+$border-radius-3: 18px;
+$trend-background-color: #fff0f1; //  Site trend item background color 
+$testimonial-background-color: #f5f5f5; //  Site testimonial background color 
+$brand-background-color: #f5f5f5; //  Site brand background color 
+$breadcrumb-background-color: #efefef; //  Site breadcrumb background color 
+$sidecart-background-color: #fff0f1; //  Site SideBar Cart background color 
+$alpha-29: 0.29;
+$main-secondary-rgba-color: rgba(20, 47, 65, .7);
+
+// Demo 4 variable 
+$footer-bg-color-4: #222222; // Site footer background color 
+$category-background-color :#f7f7f7; // Site category item background color
+$black-text-color: #000000; // black text color 
+$black-background-color: #000000; // black background color 
+$pro-btn-background-color: #d9d9d9; // Site pro btn item background color 
+
+// Demo 5 variable
+$border-angle-color: #be990b; //  Site Border Angle color 
+$footer-top-bg-color: #f9f9f9; //  Site footer Top background color 
+$fontfamily-oswald: "Oswald";
+$product-background-color: #f9f9f9; //  Site product item background color 
+$main-second-text-color-5: #202020;

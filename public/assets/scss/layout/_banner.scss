@@ -1,0 +1,140 @@
+/*-------------------------------------------------
+  Banner Section CSS
+---------------------------------------------------*/
+.ec-banner {
+	margin-bottom: 3px;
+}
+.ec-banner-inner {
+	display: flex;
+	flex-direction: row;
+	align-items: $textcenter;
+	justify-content: space-between;
+}
+.banner-block {
+	position: $relative;
+	display: flex;
+	overflow: hidden;
+	.bnr-overlay {
+		position: relative;
+		display: flex;
+    	align-items: center;
+		border-radius: 5px;
+		overflow: hidden;
+		border: 1px solid $border-color-1;
+	}
+	img {
+		width: $width-100;
+		transition: all 0.3s ease 0s;
+	}
+	.banner-text {
+		position: $absolute;
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		.ec-banner-title {
+			font-size: 28px;
+			color: $main-secondary-color;
+			margin-bottom: 2px;
+			letter-spacing: 1px;
+			font-family: 'Montserrat';
+			font-weight: 800;
+			position: $relative;
+			padding-top: 0;
+			text-transform: $uppercase;
+			line-height: 1.2;
+		}
+		.ec-banner-discount {
+			font-size: 24px;
+			font-weight: $font-weight-400;
+			color: $white-color;
+			letter-spacing: 0.7px;
+			line-height: 1;
+		}
+		.ec-banner-stitle {
+			font-size: 20px;
+			font-weight: $font-weight-400;
+			color: $main-secondary-color;
+			text-transform: $capitalize;
+			letter-spacing: 0.7px;
+			line-height: 1;
+			position: $relative;
+			padding-left: 2px;
+			padding-top: 10px;
+		}
+	}
+	.banner-content {
+		position: $absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: row;
+		width: $width-100;
+		height: 100%;
+		align-items: $textcenter;
+		justify-content: center;
+		transform: scale(0.9);
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+		border-radius: 5px;
+		background-color: rgba(31, 28, 28, 0.5);
+		.ec-banner-btn {
+			a {
+				height: 40px;
+				font-size: 16px;
+				text-transform: $uppercase;
+				padding: 0 18px;
+				letter-spacing: 0.02rem;
+				background-color: $main-primary-color;
+				color: $white-color;
+				line-height: 40px;
+				display: flex;
+				align-items: $textcenter;
+				justify-content: center;
+				font-weight: 600;
+				&:hover {
+					background-color: $main-secondary-color;
+				}
+			}
+		}
+	}
+	&:hover {
+		.banner-content {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+.ec-banner-block-1 {
+	.banner-block {
+		.banner-text {
+			padding-top: 46px;
+			.ec-banner-discount {
+				font-family: $fontfamilyfjallaone;
+			}
+		}
+	}
+}
+.ec-banner-block-2 {
+	.banner-block {
+		.banner-text {
+			.ec-banner-title {
+				font-size: 28px;
+				margin: 15px 0;
+			}
+			.ec-banner-discount {
+				font-size: $fontsize-16px;
+				color: #777;
+				letter-spacing: 0.5px;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+.ec-banner-block.ec-banner-block-2 {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	height: 100%;
+	justify-content: space-between;
+}

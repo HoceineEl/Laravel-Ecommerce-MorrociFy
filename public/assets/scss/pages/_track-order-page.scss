@@ -1,0 +1,189 @@
+/*-------------------------------------------------
+  Track Order Page CSS
+---------------------------------------------------*/
+.track_order_page {
+	.ec-page-content {
+		.section-title {
+			margin-bottom: 22px;
+			.ec-title {
+				padding: 0 64px;
+				&:after {
+					width: 50px;
+				}
+				&:before {
+					width: 50px;
+				}
+			}
+
+		}
+	}
+}
+.ec-trackorder-inner {
+	background: #f9f9f9;
+	padding: 50px;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid $border-color-1;
+}
+.ec-trackorder-top {
+	display: flex;
+	align-items: $textcenter;
+	justify-content: space-between;
+	.ec-order-id {
+		font-family: 'Montserrat';
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 40px;
+		margin-bottom: 0;
+		color: $main-secondary-color;
+		letter-spacing: 0;
+		position: $relative;
+		text-transform: $capitalize;
+	}
+	.ec-order-detail {
+		font-size: 15px;
+		color: $main-text-color;
+		letter-spacing: 0;
+		line-height: 1.1;
+		div {
+			&:first-child {
+				margin-bottom: 7px;
+			}
+		}
+		span {
+			color: $main-primary-color;
+			text-transform: $uppercase;
+			font-weight: $font-weight-600;
+		}
+	}
+}
+#ec-progressbar {
+	overflow: hidden;
+	margin: 58px -9% 5px;
+	li {
+		list-style-type: none;
+		font-size: $fontsize-14px;
+		width: 20%;
+		float: $floatleft;
+		position: $relative;
+		font-weight: $font-weight-400;
+		text-align: $textcenter;
+		.ec-progressbar-track {
+			position: $relative;
+			display: block;
+			&:before {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				display: block;
+				font-size: 26px;
+				background: #deddff;
+				border-radius: 50%;
+				margin: auto;
+				padding: 0px;
+				display: flex;
+				align-items: $textcenter;
+				justify-content: center;
+				color: $white-color;
+				z-index: 9;
+				position: $relative;
+			}
+			&:after {
+				content: '';
+				width: $width-100;
+				height: 12px;
+				background: #deddff;
+				position: $absolute;
+				left: 0;
+				top: 19px;
+			}
+		}
+		.ec-track-icon {
+			display: block;
+			margin-bottom: 11px;
+		}
+		.ec-track-title {
+			position: $relative;
+			color: $main-text-color;
+			font-size: 15px;
+			text-transform: $capitalize;
+			font-weight: 500;
+			line-height: 24px;
+			max-width: 50%;
+			display: block;
+			margin: 0 auto;
+			text-align: $textcenter;
+			letter-spacing: 0;
+			margin-top: 16px;
+			word-break: break-all;
+		}
+		&:first-child {
+			.ec-progressbar-track {
+				&:after {
+					content: none;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+					position: $absolute;
+					left: 50%;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+				}
+			}
+		}
+		&:last-child {
+			.ec-progressbar-track {
+				&:after {
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+					position: $absolute;
+					left: -50%;
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+				}
+			}
+		}
+		&:nth-child(2) {
+			.ec-progressbar-track {
+				&:after {
+					left: -50%;
+				}
+			}
+		}
+		&:nth-child(3) {
+			.ec-progressbar-track {
+				&:after {
+					left: -50%;
+				}
+			}
+		}
+		&:nth-child(4) {
+			.ec-progressbar-track {
+				&:after {
+					left: -50%;
+				}
+			}
+		}
+	}
+	li.active {
+		.ec-progressbar-track {
+			&:before {
+				background: #deddff;
+				background: $main-primary-color;
+				font-family: $EcIcons;
+				content: "\f00c";
+				z-index: 2;
+			}
+			&:after {
+				background: $main-primary-color;
+			}
+		}
+	}
+	.step0 {
+		.ec-progressbar-track {
+			&:before {
+				font-family: $EcIcons;
+				content: "\f10c";
+			}
+		}
+	}
+}

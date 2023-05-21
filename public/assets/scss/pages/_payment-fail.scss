@@ -1,0 +1,48 @@
+/*-------------------------------------------------
+   Payment Fail Page CSS
+---------------------------------------------------*/
+.ec-payment-fail-page {
+	.ec-payment-fail {
+		padding-left: 15px;
+		padding-right: 15px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.ec-payment-content {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			ul {
+				margin-bottom: 30px;
+				li {
+					padding: 10px 0;
+				}
+			}
+			i {
+				margin: 0 15px 0 0;
+				font-size: 18px;
+				color: $main-primary-color;
+			}
+			i.eci-times-circle-o {
+				color: #ff9797;
+			}
+			i.eci-check-circle-o {
+				color: #34d499;
+			}
+			.section-title {
+				margin-bottom: 15px;
+				.ec-title {
+					padding: 0;
+					font-size: 40px;
+				}
+				.sub-title {
+					padding: 15px 0 0 0;
+					font-size: 16px;
+					color: $text-color-777;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+/*-------------------------------------------------
+  Instagram Section CSS
+---------------------------------------------------*/
+section.ec-instagram-section {
+	overflow: hidden;
+}
+.ec-instagram-section {
+	.section-title {
+		.sub-title {
+			margin-top: 7px;
+		}
+	}
+}
+.ec-insta-outer {
+	display: flex;
+	justify-content: space-between;
+}
+.ec-insta-wrapper {
+	margin: 0 -15px;
+}
+.ec-insta-item {
+	width: 250px;
+	padding: 0 15px;
+}
+.ec-insta-inner {
+	a {
+		width: $width-100;
+		height: 100%;
+		position: $relative;
+		z-index: 1;
+		display: block;
+		transition: all 0.3s ease 0s;
+		overflow: hidden;
+		border-radius: 5px;
+		&:after {
+			position: $absolute;
+			top: 0;
+			left: 0;
+			width: $width-100;
+			height: 100%;
+			content: "";
+			background: $main-primary-color;
+			z-index: 2;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&:before {
+			font-family: $EcIcons;
+			content: "\f16d";
+			font-size: 45px;
+			top: 52%;
+			left: 50%;
+			color: $white-color;
+			z-index: 3;
+			position: $absolute;
+			transition: all 0.3s ease 0s;
+			opacity: 0;
+			visibility: hidden;
+			line-height: 1;
+			margin-left: -20px;
+			margin-top: -28px;
+		}
+		&:hover {
+			&:after {
+				opacity: 0.8;
+			}
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	img {
+		max-width: $width-100;
+	}
+}

@@ -1,0 +1,61 @@
+/*-------------------------------------------------
+  Services Section CSS
+---------------------------------------------------*/
+.ec_ser_inner {
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: 1px solid $border-color-1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    text-align: center;
+	background-color: $card-bg-white;
+	border-radius: 5px;
+	.ec-service-image {
+		margin-bottom: 15px;
+		svg {
+			width: 50px;
+			height: 50px;
+			fill: $main-text-color;
+			stroke: $main-text-color;
+			stroke-dashoffset: 1500;
+			stroke-dasharray: 1500;
+		}
+		i {
+			font-size: 44px;
+    		line-height: 25px;
+		}
+	}				
+	&:hover {
+		box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+		-webkit-box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+		-moz-box-shadow: 0 3px 25px 4px rgba(0, 0, 0, 0.06);
+		border: 1px solid transparent;
+		.ec-service-image {
+			svg {
+				stroke-dashoffset: 0;
+				// fill: transparent;
+				transition: transform .3s, fill .5s, stroke-dashoffset 6s;
+			}
+		}
+	}
+
+}
+.ec-service-desc {
+	h2 {
+		font-size: 18px;
+		font-weight: $font-weight-700;
+		color: $main-text-color;
+		letter-spacing: 0.6px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 14px;
+		color: $main-second-text-color;
+		line-height: 1.5;
+		letter-spacing: 0.5px;
+	}
+}

@@ -1,0 +1,142 @@
+/*-------------------------------------------------
+  User account Page CSS
+---------------------------------------------------*/
+.ec-user-account {
+	.ec-vendor-block-img {
+		border-bottom: 1px solid $border-color-1;
+    	padding-bottom: 30px;
+		p{
+			margin-bottom: 5px;
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+	.ec-vendor-block-bg {
+		width: 100%;
+		height: 200px;
+		background-image: url(../images/banner/8.jpg) !important;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-blend-mode: overlay;
+		background-color: rgba(0, 0, 0, 0.6);
+		position: relative;
+	}
+	.border-none {
+		border: none;
+	}
+	.border-color {
+		border-bottom: none;
+	}
+	tfoot {
+		tr {
+			td {
+				color: $text-color-777;
+				span {
+					padding: 15px 0 0 0 !important;
+					display: block;
+				}
+			}
+		}
+	}
+	.page-header {
+		display: flex;
+		justify-content: center;
+		.page-tools {
+			-ms-flex-item-align: end;
+			align-self: flex-end;
+		}
+		img {
+			width: 130px;
+		}
+	}
+	.ec-vendor-block-detail {
+		position: relative;
+		margin-bottom: 15px;
+	}
+	.brc-default-l1 {
+		border-color: $border-color-1;
+	}
+	.ml-n1 {
+		margin-left: -.25rem;
+	}
+	.mx-n1 {
+		margin-left: -.25rem;
+		margin-right: -.25rem;
+	}
+	.mr-n1 {
+		margin-right: -.25rem;
+	}
+	.mb-4 {
+		margin-bottom: 1.5rem;
+	}
+	.my-4 {
+		margin-bottom: 1.5rem;
+	}
+	hr {
+		margin-bottom: 1rem;
+		border: 0;
+		border-top: 1px solid $border-color-1;
+	}
+	.text-grey-m2 {
+		color: $text-color-777;
+	}
+	.font-bolder {
+		font-weight: 600 ;
+	}
+	.text-600 {
+		font-weight: 700;
+	}
+	.pb-25 {
+		padding-bottom: .75rem;
+	}
+	.py-25 {
+		padding-bottom: .75rem;
+		padding-top: .75rem;
+	}
+	.pt-25 {
+		padding-top: .75rem;
+	}
+	.w-2 {
+		width: 1rem;
+	}
+	.note-text-color {
+		color: $text-color-999;
+	}
+	.padding-b-0 {
+		padding-bottom: 0 !important;
+	}
+}
+.ec-invoice-2 {
+	table {
+		margin-bottom: 30px;
+	}
+	.ec-vendor-dashboard-card {
+		.ec-vendor-card-body {
+			.ec-vendor-card-table {
+				thead {
+					tr {
+						background-color: #2d313e;
+						th {
+							color: #fff;
+						}
+					}
+				}
+				tbody, tfoot {
+					tr{
+						background-color: #f7f7f7;
+						&:nth-child(even){
+							background-color: #f3f3f3;
+						}
+						td, th {
+							span{
+								padding: 10px 0 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

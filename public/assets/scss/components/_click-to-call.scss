@@ -1,0 +1,193 @@
+/*---------------------------------------------------------------------------------
+    Click To Call CSS
+-----------------------------------------------------------------------------------*/
+.ec-cc-style {
+	display: inline-block;
+	position: fixed;
+	letter-spacing: 0.1px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	z-index: 16;
+	.cc-panel {
+		display: none;
+		margin-bottom: 5%;
+		width: 300px;
+		border-radius: 10px;
+		box-shadow: 0px 3px 7px rgba(12, 12, 12, 0.18);
+		.cc-header {
+			padding: 15px 10px;
+			border-radius: 8px;
+			text-align: center;
+		}
+		.cc-body {
+			padding: 15px 10px 0;
+			text-align: center;
+		}
+		.cc-footer {
+			padding: 25px 10px 30px;
+			text-align: center;
+		}
+	}
+	.cc-header {
+		img {
+			padding: 5px;
+			width: 30%;
+			border: 2px solid $white-bg;
+			border-radius: 100%;
+		}
+		h2 {
+			padding-top: 5px;
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			color: $white-bg;
+		}
+		p {
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+	}
+	.cc-body {
+		p {
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+	}
+	.cc-footer {
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+		.cc-call-button {
+			position: relative;
+			margin: auto;
+			padding: 12px 20px;
+			transition: all 0.2s ease;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 40px;
+				height: 40px;
+				display: block;
+				border-radius: 28px;
+				transition: all 0.3s ease;
+			}
+			span {
+				position: relative;
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 900;
+				letter-spacing: 0.25em;
+				text-transform: uppercase;
+				vertical-align: middle;
+			}
+			svg {
+				position: relative;
+				top: 0;
+				margin-left: 10px;
+				fill: none;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke: $main-second-text-color;
+				stroke-width: 2;
+				transform: translateX(-5px);
+				transition: all 0.3s ease;
+			}
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+				svg {
+					transform: translateX(0);
+				}
+			}
+			&:active {
+				transform: scale(0.96);
+			}
+		}
+	}
+	.cc-button {
+		width: 40px;
+		height: 40px;
+		box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+		&:hover {
+			background-color: $main-secondary-color;
+			box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.5);
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-ms-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+		}
+		i {
+			display: table;
+			height: 100%;
+			width: 100%;
+			margin-right: 0px;
+			font-size: 17px;
+			text-align: center;
+			line-height: 46px;
+			cursor: pointer;
+		}
+	}
+}
+.cc-right-bottom {
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	cursor: pointer;
+	z-index: 15;
+	.cc-call-svg{
+		fill: $white-bg;
+		width: 100%;
+		padding: 9px;
+	}
+}
+.ec-cc-style {
+	.cc-panel {
+		background-color: $white-bg;
+		.cc-header {
+			background-color: $main-primary-color-4;
+			color: $white-bg;
+		}
+	}
+	.cc-footer {
+		.cc-call-button {
+			svg {
+				stroke: $tab-text-color;
+			}
+			&:before {
+				@include ease3;
+				background-color: $main-primary-color-4;
+			}
+			&:hover {
+				&:before {
+					background-color: $main-secondary-color;
+				}
+				span {
+					color: $white-bg;
+				}
+				svg {
+					stroke: $white-bg;
+				}
+			}
+			span {
+				color: $tab-text-color;
+			}
+		}
+	}
+	.cc-button {
+		background-color: $main-primary-color-4;
+		i {
+			color: $white-bg;
+		}
+	}
+	.cc-body {
+		p {
+			color: $text-color-777;
+		}
+	}
+}
+

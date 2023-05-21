@@ -1,0 +1,222 @@
+/*-------------------------------------------------
+  Product Countdown CSS
+---------------------------------------------------*/
+.ec-fre-spe-section {
+	.section-title {
+		padding-bottom: 5px;
+		border-bottom: 1px solid $border-color-1;
+		.ec-bg-title {
+			font-size: 52px;
+			letter-spacing: 1px;
+		}
+		.ec-title {
+			padding: 0;
+			&:after {
+				content: none;
+			}
+			&:before {
+				content: none;
+			}
+		}
+	}
+	.ec-fs-product {
+		padding: 0 10px;
+	}
+	.ec-fre-products {
+		margin: 0 -10px;
+	}
+	.ec-spe-products {
+		margin: 0 -10px;
+	}
+	.ec-fs-pro-inner {
+		background: #f7f7f7;
+		padding: 15px 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 476px;
+		border-radius: 5px;
+		border: 1px solid $border-color-1;
+	}
+	.slick-arrow {
+		top: -70px;
+	}
+}
+.periodDisplay {
+	font-size: 13px;
+}
+.ec-fs-pro-inner {
+	.ec-fs-pro-image {
+		.image {
+			img {
+				max-width: 100%;
+				padding-right: 10px;
+				transition: all 0.3s ease 0s;
+				z-index: 1;
+			}
+			img.hover-image {
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+		}
+		position: relative;
+		a.quickview {
+			position: absolute;
+			z-index: 9;
+			top: 60%;
+			right: 0;
+			display: flex;
+			flex-direction: row;
+			visibility: hidden;
+			transition: all 0.5s ease 0s;
+			width: 40px;
+			height: 40px;
+			left: 0;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			margin: 0 auto;
+			color: $white-text-color;
+			background-color: $white-color;
+			border: 1px solid $border-color-1;
+			border-radius: 50%;
+			&:hover {
+				box-shadow: 0px 0px 5px 0px #ccc;
+			}
+			i {
+				color: $text-color-777;
+				font-size: 17px;
+    			line-height: 0;
+			}
+		}
+	}
+	&:hover {
+		.ec-fs-pro-image {
+			a.quickview {
+				visibility: visible;
+				opacity: 1;
+				top: 44%;
+			}
+		}
+	}
+	.ec-fs-pro-content {
+		display: flex;
+		flex-direction: column;
+		padding-left: 30px;
+		.ec-fs-price {
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: left;
+			color: $main-second-text-color;
+			margin: 10px 0 20px 0;
+			line-height: 1.2;
+			span.new-price {
+				color: $main-secondary-color;
+				font-weight: 700;
+				font-size: 15px;
+			}
+			span.old-price {
+				font-size: 13px;
+				margin-right: 15px;
+				text-decoration: line-through;
+				color: $main-second-text-color;
+				margin-top: 2px;
+			}
+		}
+		.ec-fs-pro-desc {
+			font-size: 14px;
+			color: $main-second-text-color;
+			border-top: 1px solid $border-color-1;
+			padding: 10px 0 0;
+			line-height: 22px;
+			letter-spacing: 0.5px;
+			margin-bottom: 10px;
+			margin-top: 15px;
+		}
+		.ec-fs-pro-book {
+			margin-bottom: 10px;
+			font-size: 16px;
+			color: $main-text-color;
+			letter-spacing: 0.5px;
+			font-weight: 600;
+			span {
+				color: $main-primary-color;
+			}
+		}
+		.ec-fs-pro-btn {
+			a {
+				height: 35px;
+				line-height: 35px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-weight: 400;
+				min-width: 120px;
+				text-transform: uppercase;
+				font-size: 14px;
+				&:not(:last-child) {
+					margin-right: 11px;
+				}
+			}
+		}
+	}
+	.ec-fs-pro-title {
+		margin: 0 0 2px;
+		a {
+			font-family: $fontfamily;
+			font-weight: 400;
+			font-size: 20px;
+			color: $text-color-777;
+			letter-spacing: 0.6px;
+			text-decoration: none;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: block;
+			line-height: 34px;
+		}
+	}
+	.ec-fs-pro-rating {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		margin-bottom: 2px;
+		.ec-fs-rating-text {
+			font-size: 16px;
+			color: $main-second-text-color;
+		}
+		.ec-fs-rating-icon {
+			margin-right: 14px;
+			margin-top: -1px;
+		}
+	}
+}
+.ec-fre-products {
+	.slick-arrow.slick-prev {
+		right: 28px;
+		left: auto;
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+		left: auto;
+	}
+}
+.ec-spe-products {
+	.slick-arrow.slick-prev {
+		right: 28px;
+		left: auto;
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+		left: auto;
+	}
+}
+.numberDisplay {
+	color: #686868;
+	background-color: $white-color;
+	font-weight: 500;
+	border-radius: 5px;
+}

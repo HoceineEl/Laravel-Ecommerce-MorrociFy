@@ -1,0 +1,126 @@
+/*===  Quick View ===*/
+.quickview-pro-content {
+	.ec-quick-title {
+		a {
+			color: $main-text-color;
+			font-size: 20px;
+			text-transform: $capitalize;
+			margin: 0 0 15px 0;
+			text-decoration: $textdecoration;
+			display: block;
+			line-height: 1.5;
+			font-weight: 700;
+		}
+	}
+	p {
+		font-size: $fontsize-14px;
+		color: $default-heading-color;
+		margin: 0 0 12px;
+		font-weight: $font-weight-600;
+		span {
+			font-weight: $font-weight-400;
+		}
+	}
+	.quickview-para {
+		font-weight: $font-weight-400;
+		color: $main-text-color;
+		line-height: 26px;
+	}
+	.ec-quickview-rating {
+		display: flex;
+		margin-bottom: 15px;
+	}
+	.ec-quickview-desc {
+		margin-bottom: 10px;
+	}
+	.ec-quickview-price {
+		display: flex;
+		align-items: $textcenter;
+		justify-content: left;
+		span.old-price {
+			font-size: $fontsize-18px;
+			margin-right: 10px;
+			text-decoration: line-through;
+			color: $main-text-color;
+		}
+		span.new-price {
+			color: $main-secondary-color;
+			font-weight: $font-weight-700;
+			font-size: $fontsize-22px;
+		}
+	}
+	.pro-details-list {
+		padding: 0 0 30px 0;
+		margin: 0 0 15px 0;
+		border-bottom: 1px solid $border-color-5;
+		display: inline-block;
+		width: $width-100;
+		color: $main-text-color;
+		.ec-quickview-desc {
+			font-weight: $font-weight-400;
+			color: $main-text-color;
+			line-height: 24px;
+			margin: 0;
+		}
+		li {
+			display: block;
+			width: $width-100;
+			line-height: 24px;
+		}
+	}
+	.ec-quickview-qty {
+		display: inline-flex;
+		margin: 15px 0 0 0;
+		width: $width-100;
+		.qty-plus-minus {
+			border: 1px solid $border-color-1;
+			display: inline-block;
+			height: 40px;
+			overflow: hidden;
+			padding: 0;
+			position: $relative;
+			width: 80px;
+			display: flex;
+			align-items: $textcenter;
+			justify-content: space-between;
+			.ec_qtybtn {
+				width: 24px;
+				display: flex;
+				align-items: $textcenter;
+				justify-content: center;
+				height: 100%;
+				cursor: pointer;
+			}
+			input.qty-input {
+				height: 40px;
+				margin: 2px 0 0 0;
+				padding: 0;
+				background: transparent none repeat scroll 0 0;
+				border: medium none;
+				color: $main-text-color;
+				float: $floatleft;
+				font-size: $fontsize-14px;
+				text-align: $textcenter;
+				width: 40px;
+				outline: none;
+			}
+		}
+		.ec-quickview-cart {
+			.btn {
+				display: flex;
+				height: 40px;
+				line-height: 1.5;
+				text-align: $textcenter;
+				font-size: 14px;
+				font-weight: $font-weight-400;
+				margin: 0 15px;
+				text-transform: $uppercase;
+				justify-content: center;
+				align-items: $textcenter;
+				i {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}

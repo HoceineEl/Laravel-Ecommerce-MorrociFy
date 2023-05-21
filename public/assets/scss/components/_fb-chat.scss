@@ -1,0 +1,243 @@
+/*-------------------------------------------------
+    Click To FB Messenger Main Container
+---------------------------------------------------*/
+.ec-fb-style {
+	display: inline-block;
+	position: fixed;
+	letter-spacing: 0.1px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	z-index: 16;
+	.fb-panel {
+		display: none;
+		margin-bottom: 5%;
+		width: 300px;
+		border-radius: 10px;
+		box-shadow: 0px 3px 7px rgba(12, 12, 12, 0.18);
+		.fb-header {
+			padding: 15px 10px;
+			border-radius: 8px;
+			text-align: center;
+		}
+		.fb-body {
+			padding: 15px 10px 0;
+			text-align: center;
+		}
+		.fb-footer {
+			padding: 25px 10px 30px;
+			text-align: center;
+		}
+	}
+	.fb-header {
+		img {
+			padding: 5px;
+			width: 30%;
+			border: 2px solid $white-bg;
+			border-radius: 100%;
+		}
+		h2 {
+			padding-top: 5px;
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			color: #fff;
+		}
+		p {
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+	}
+	.fb-body {
+		p {
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+	}
+	.fb-footer {
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+		.fb-msg-button {
+			@include ease3;
+			position: relative;
+			margin: auto;
+			padding: 10px 20px;
+			transition: all 0.2s ease;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 40px;
+				height: 40px;
+				display: block;
+				border-radius: 28px;
+				transition: all 0.3s ease;
+				width: 100%;
+			}
+			span {
+				position: relative;
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 500;
+				letter-spacing: 0.03rem;
+				text-transform: uppercase;
+				color: #fff;
+			}
+			svg {
+				position: relative;
+				top: -1px;
+				margin-left: 10px;
+				fill: none;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke: $main-second-text-color;
+				stroke-width: 2;
+				transform: translateX(-5px);
+				transition: all 0.3s ease;
+			}
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+				svg {
+					transform: translateX(0);
+				}
+			}
+			&:active {
+				transform: scale(0.96);
+			}
+		}
+	}
+	.fb-button {
+		padding: 8px;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		// border: 1px solid $white-bg;
+		box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.5);
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-ms-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+		}
+		img {
+			width: 28px;
+			cursor: pointer;
+		}
+	}
+}
+.fb-right-bottom {
+	bottom: 15px;
+	right: 15px;
+	float: right;
+}
+.rotateForward {
+	animation-name: rotateF;
+	animation-duration: 0.65s;
+	animation-iteration-count: 1;
+}
+
+@keyframes rotateF{
+	from{
+	  transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	}
+	to{
+	  transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -webkit-transform: rotate(360deg);
+	}
+}
+
+/*----- Floating Button Backward Rotation  -----*/
+.rotateBackward{
+  animation-name: rotateB;
+  animation-duration: 0.65s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotateB{
+	from{
+	  transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -webkit-transform: rotate(360deg);
+	}
+	to{
+	  transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	}
+}
+
+.ec-fb-style {
+	.fb-panel {
+		background-color: $white-bg;
+	}
+	.fb-footer {
+		.fb-msg-button {
+			svg {
+				stroke: #fff;
+			}
+			&:hover {
+				svg {
+					stroke: $white-bg;
+				}
+			}
+		}
+	}
+}
+.ec-fb-style {
+	.fb-panel {
+		.fb-header {
+			background: $main-primary-color-3;
+			color: $white-bg;
+		}
+	}
+	.fb-footer {
+		.fb-msg-button {
+			&:before {
+				background: $main-primary-color-3;
+			}
+			&:hover {
+				&:before {
+					background: $main-primary-color-3;
+				}
+				span {
+					color: $white-bg;
+				}
+			}
+			span {
+				color: #fff;
+			}
+		}
+	}
+	.fb-button {
+		background: $main-primary-color-3;
+		i {
+			color: $white-bg;
+			line-height: 0;
+		}
+	}
+	.fb-body {
+		p {
+			color: $text-color-777;
+		}
+	}
+}

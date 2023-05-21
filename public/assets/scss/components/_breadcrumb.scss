@@ -1,0 +1,59 @@
+/*-------------------------------------------------
+  Breadcrumb Style CSS
+---------------------------------------------------*/
+.ec-breadcrumb {
+	padding: 15px 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid $border-color-1;
+	border-bottom: 1px solid $border-color-1;
+	.ec-breadcrumb-title {
+		text-decoration: $textdecoration;
+		color: $main-text-color;
+		display: block;
+		font-size: 15px;
+		font-family: "Montserrat";
+		line-height: 22px;
+		font-weight: 700;
+		margin: 0 auto;
+		text-transform: $capitalize;
+	}
+}
+.ec-breadcrumb-list {
+	text-align: right;
+	li {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.02rem;
+		line-height: 1.2;
+		text-transform: $capitalize;
+		a {
+			position: $relative;
+			color: $main-text-color;
+		}
+	}
+	li.active {
+		color: $main-primary-color;
+	}
+	.ec-breadcrumb-item.active {
+		&::before {
+			color: $main-primary-color;
+		}
+	}
+}
+.ec-breadcrumb-item {
+	display: flex;
+	+ {
+		.ec-breadcrumb-item {
+			padding-left: 7px;
+			&::before {
+				display: inline-block;
+				padding-right: 7px;
+				color: $main-text-color;
+				content: "\f101";
+				font-family: $EcIcons;
+				font-size: 15px;
+			}
+		}
+	}
+}

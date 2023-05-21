@@ -1,0 +1,40 @@
+/*-------------------------------------------------
+   Wishlist Page CSS
+---------------------------------------------------*/
+.wishlist-2 {
+	.ec-table {
+		tbody {
+			tr {
+				td {
+					.avl {
+						color: #8bd38b;
+					}
+					.out {
+						color: #e9abab;
+					}
+					.dis {
+						color: #999;
+						user-select: none;
+					}
+					.btn {
+						width: 30px;
+						height: 30px;
+						margin: 0 3px;
+						padding: 0;
+						.svg_img.pro_svg {
+							width: 16px;
+							fill: #fff;
+						}
+					}
+					.ec-remove-wish {
+						font-size: 20px;
+						background-color: #e9abab;
+						&:hover {
+							background-color: #555;
+						}
+					}
+				}
+			} 
+		}
+	}
+}

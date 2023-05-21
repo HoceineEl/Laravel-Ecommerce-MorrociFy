@@ -1,0 +1,51 @@
+/*-------------------------------------------------
+  Element Tab Wrapper CSS
+---------------------------------------------------*/
+
+.ec-tab-wrapper-1, .ec-tab-wrapper-2, .ec-tab-wrapper-3, .ec-tab-wrapper-4 {
+	.ec-single-pro-tab-content {
+		.ec-single-pro-tab-desc {
+			p{
+				margin: 0;
+				font-family: 'Montserrat';
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+.ec-tab-wrapper-2 {
+	.ec-single-pro-tab-nav {
+		display: flex;
+		justify-content: center;
+	}
+}
+.ec-tab-wrapper-3 {
+	.ec-single-pro-tab-content {
+		padding: 30px;
+	}
+	.ec-single-pro-tab-nav {
+		margin-bottom: -1px;
+		display: flex;
+		justify-content: center;
+		.nav-tabs {
+			.nav-link.active {
+				background-color: transparent;
+				color: $text-color-777;
+				border-color: $border-color-5;
+				border-bottom: none;
+			}
+		}
+	}
+}
+.ec-tab-wrapper-4 {
+	.ec-single-pro-tab-nav {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.ec-single-pro-tab-content {
+		padding: 30px 0px 0px 1px;
+		border: none;
+	}
+}

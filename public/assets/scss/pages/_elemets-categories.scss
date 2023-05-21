@@ -1,0 +1,269 @@
+/*-------------------------------------------------
+  Element Category Wrapper CSS
+---------------------------------------------------*/
+.ec-category-wrapper-1{
+	.slick-arrow{
+		&:before {
+			content: '';
+			color: #ffffff;
+			position: relative;
+			font-size: 38px;
+			font-family: 'EcIcons';
+			width: 100%;
+			line-height: 50px;
+			height: 50px;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&:after {
+			@include ease3;
+			content: '';
+			position: absolute;
+			width: 50px;
+			top: 0;
+			height: 50px;
+			background: #2d313e;
+			left: 0;
+			right: 0;
+			border-radius: 100%;
+			opacity: 0.5;
+			border: 1px solid #fff;
+		}
+		&:hover{
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+	.slick-arrow.slick-prev {
+		left: 5px;
+	}
+	.slick-arrow.slick-next {
+		right: 5px;
+	}
+	.slick-arrow.slick-next:before {
+		content: '\f105';
+	}
+	.slick-arrow.slick-prev:before {
+		content: '\f104';
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 45%;
+		margin: 0 auto;
+		font-size: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		z-index: 1;
+	}
+	.ec_cat_content {
+		padding: 15px;
+		.ec_cat_inner {
+			position: relative;
+		}
+		.ec-cat-image {
+			box-shadow: 5px 7px 13px 0px rgba(35, 31, 32, 0.1);
+			-webkit-box-shadow: 5px 7px 13px 0px rgba(35, 31, 32, 0.1);
+			-moz-box-shadow: 5px 7px 13px 0px rgbaa(35, 31, 32, 0.1);
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		.ec-cat-desc {
+			position: absolute;
+			top: auto;
+			display: flex;
+			justify-content: center;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: 30px;
+		}
+		.ec-section-btn a {
+			font-size: 16px;
+			padding: 10px 15px;
+			min-width: 160px;
+		}
+	}
+}
+.ec-category-wrapper-3 {
+	.cat-card{
+		@include ease3;
+		position: relative;
+		overflow: hidden;
+		img {
+			@include ease3;
+		}
+		&:hover {
+			img {
+				-webkit-transform: scale(1.2) rotate(-5deg);
+				-ms-transform: scale(1.2) rotate(-5deg);
+				transform: scale(1.2) rotate(-5deg);
+			}
+		}
+		.cat-detail {
+			padding: 15px;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translate(0%,-50%);
+  			transform: translate(0%,-50%);
+			  h4 {
+				font-weight: 700;
+				font-size: 18px;
+				color: $text-color-777;
+			  }
+			  h5 {
+				line-height: 1.4;
+				margin-bottom: 20px;
+				font-size: 15px;
+				color: $text-color-777;
+			  }
+			.btn-primary{
+				padding: 8px 15px;
+				text-transform: uppercase;
+				line-height: 22px;
+			}
+		}
+	}
+}
+.ec-category-wrapper-4 {
+	.cat-card{
+		@include ease3;
+		position: relative;
+		overflow: hidden;
+		.card-img {
+			position: relative;
+			overflow: hidden;
+		}
+		img {
+			@include ease3;
+		}
+		&:hover {
+			img {
+				-webkit-transform: scale(1.2) rotate(-5deg);
+				-ms-transform: scale(1.2) rotate(-5deg);
+				transform: scale(1.2) rotate(-5deg);
+			}
+		}
+		.cat-detail {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			  h4 {
+				margin-top: 15px;
+				text-align: center;
+				font-weight: 700;
+				font-size: 17px;
+				color: $text-color-777;
+			  }
+			  h5 {
+				margin-bottom: 15px;
+				text-align: center;
+				line-height: 1.4;
+				font-size: 15px;
+				color: $text-color-777;
+			  }
+			.btn-primary{
+				text-align: center;
+				width: 120px;
+				padding: 8px 15px;
+				text-transform: uppercase;
+				line-height: 22px;
+			}
+		}
+	}
+}
+.ec-category-wrapper-5 {
+	.cat-card{
+		@include ease3;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		img {
+			@include ease3;
+		}
+		&:hover {
+			.cat-detail {
+				opacity: 0;
+				transform: scale(0);
+			}
+			.btn-primary-1{
+				opacity: 1;
+				transform: scale(1);
+			}
+			img {
+				-webkit-transform: scale(1.2) rotate(-5deg);
+				-ms-transform: scale(1.2) rotate(-5deg);
+				transform: scale(1.2) rotate(-5deg);
+			}
+		}
+		.btn-primary-1{
+			@include ease3;
+			width: 120px;
+			margin: 0 auto;
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			padding: 10px 15px 8px 15px;
+			text-transform: uppercase;
+			border-radius: 30px;
+			z-index: 1;
+			transform: scale(0);
+			line-height: 22px;
+			text-align: center;
+		}
+		.cat-detail {
+			@include ease3;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 15px;
+			opacity: 1;
+			.cat-detail-block {
+				height: 100%;
+				width: 100%;
+				border-radius: 50%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: rgba(255, 255, 255, .8);
+			}
+			  h4 {
+				font-weight: 700;
+				font-size: 17px;
+			  }
+			  h5 {
+				line-height: 1.4;
+				margin-bottom: 15px;
+				text-align: center;
+				font-size: 15px;
+			  }
+			.btn-primary{
+				padding: 8px 15px;
+				text-transform: uppercase;
+				border-radius: 30px;
+				line-height: 22px;
+			}
+		}
+	}
+}
+.cat-space-2 > div {
+    margin: 15px 0;
+}
+.cat-space-3 > div {
+    margin: 15px 0;
+}

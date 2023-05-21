@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------------------------------------
+    Included CSS INDEX
+-----------------------------------------------------------------------------------
+
+01. Typography
+02. Components
+    - Helper
+    - Common
+    - Popup Model
+    - Breadcrumb
+03. Layout 
+    - Header Section
+    - Mainslider Section
+    - Product Tab Section
+    - Banner Section
+    - Category Section
+    - Specials Section
+    - Services Section
+    - Offer Section
+    - New Product Section
+    - Testimonial Section
+    - Brand Section
+    - Instagram Section
+    - Footer Section
+    - Quickview Section
+-----------------------------------------------------------------------------------*/
+
+// Typography ( Import Typography )
+@import "base/_typography";
+
+// Utilities ( Import Utilities )
+@import "utilities/_variables";
+@import "utilities/_mixins";
+
+// Layout ( Import Required Layout )
+@import "layout/_mainslider";
+@import "layout/_banner";
+@import "layout/_specials";
+@import "layout/_vendor";
+@import "layout/_services";
+@import "layout/_offer";
+@import "layout/_brand";
+@import "layout/_category-sidebar";
+
+
+
+
+
+

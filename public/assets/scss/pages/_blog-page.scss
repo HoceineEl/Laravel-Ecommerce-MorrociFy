@@ -1,0 +1,316 @@
+/*-------------------------------------------------
+  Blog Page CSS
+---------------------------------------------------*/
+.blog_page {
+	.ec-page-content {
+		.section-title {
+			margin-bottom: 23px;
+		}
+	}
+	.ec-sidebar-wrap {
+		.ec-sb-block-content {
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+		.ec-sidebar-recent-blog {
+			.ec-sb-block-content {
+				margin-bottom: 30px;
+				padding-bottom: 0;
+			}
+			h3 {
+				margin-bottom: 4px;
+				margin-top: 2px;
+			}
+		}
+		h3 {
+			font-size: $fontsize-20px;
+			font-weight: $font-weight-400;
+			letter-spacing: 1px;
+			letter-spacing: 0;
+		}
+		.ec-sidebar-block {
+			.ec-sb-block-content {
+				>li {
+					&:last-child {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.ec-blog-inner {
+	background-color: $card-bg-white;
+	.ec-blog-image {
+		margin-bottom: 15px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.ec-blog-title {
+		margin: 0 0 3px;
+		a {
+			color: $main-secondary-color;
+			font-size: 16px;
+			margin: 0 auto;
+			text-decoration: $textdecoration;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: block;
+			font-family: 'Montserrat';
+			font-weight: 600;
+			line-height: 1.5;
+			letter-spacing: 0;
+			text-transform: capitalize;
+			&:hover {
+				color: $main-primary-color;
+			}
+		}
+	}
+	.ec-blog-date {
+		font-size: $fontsize-14px;
+		color: $main-second-text-color;
+		line-height: 1.4;
+		letter-spacing: 0;
+		margin-bottom: 10px;
+		span {
+			padding: 0 5px;
+			color: $main-secondary-color;
+		}
+	}
+	.ec-blog-desc {
+		margin-bottom: 13px;
+		color: $text-color-777;
+		font-size: 14px;
+		letter-spacing: 0;
+		word-break: break-all;
+		line-height: 24px;
+		font-family: 'Montserrat';
+	}
+	.ec-blog-btn {
+		a.btn {
+			min-width: 130px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 15px;
+		}
+	}
+}
+.ec-sidebar-recent-blog {
+	.ec-sidebar-block-item {
+		margin-bottom: 13px;
+		border-bottom: 1px solid $border-color-1;
+		padding-bottom: 18px;
+		.ec-blog-title {
+			margin-bottom: 2px;
+			a {
+				color: $text-color-777;
+				font-size: 14px;
+				letter-spacing: 0;
+				line-height: 1;
+				font-weight: $font-weight-600;
+				font-family: 'Montserrat';
+			}
+		}
+		.ec-blog-date {
+			font-size: $fontsize-16px;
+			color: $main-second-text-color;
+			line-height: 1;
+			letter-spacing: 0;
+		}
+	}
+}
+.ec-blog-search {
+	height: 50px;
+	box-shadow: none;
+	width: $width-100;
+	margin-bottom: 30px;
+	outline: none;
+	border: 1px solid $border-color-1;
+	color: $main-text-color;
+	padding: 0;
+	position: $relative;
+	.ec-blog-search-form {
+		display: flex;
+		align-items: $textcenter;
+		background: $card-bg-white;
+	}
+	.form-control {
+		display: block;
+		width: $width-100;
+		min-height: 48px;
+		height: 48px;
+		padding: 0 20px;
+		font-size: $fontsize-16px;
+		font-weight: $font-weight-400;
+		line-height: 1;
+		color: $main-second-text-color;
+		border-radius: 0;
+		background-color: transparent;
+		border: none;
+		letter-spacing: 0;
+	}
+	.submit {
+		position: $relative;
+		height: 48px;
+		justify-content: center;
+		width: 60px;
+		color: $main-text-color;
+		i {
+			font-weight: $font-weight-700;
+		}
+	}
+}
+.ec-blogs-inner {
+	background: $card-bg-white;
+}
+.ec-blog-main-img {
+	border-radius: 5px;
+	overflow: hidden;
+	img {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+}
+.ec-blog-date{
+	display: inline-flex;
+    padding: 5px 0 0px 0;
+	a {
+		margin-left: 5px;
+		margin-top: 15px;
+	}
+	.date {
+		margin-top: 15px;
+	}
+}
+.ec-blog-detail {
+	.ec-blog-title {
+		font-family: 'Montserrat';
+		font-weight: 600;
+		font-size: 24px;
+		letter-spacing: 0;
+		color: $main-secondary-color;
+	}
+	p{
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.blockquote {
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 500;
+		font-style: italic;
+	}
+	.ec-blog-sub-imgs {
+		img {
+			margin-bottom: 30px;
+			border-radius: 5px;
+		}
+	}
+}
+.ec-blog-tags{
+	margin: 30px 0;
+	a{
+		margin-right: 10px;
+		font-size: 17px;
+    	text-transform: capitalize;
+	}
+}
+.ec-blog-arrows {
+	margin-bottom: 30px;
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid $default-border-color;
+	border-bottom: 1px solid $default-border-color;
+	a{
+		font-size: 20px;
+    	text-transform: capitalize;
+		color: $text-color-777;
+	}
+}
+.ec-blog-comment-wrapper {
+	h4 {
+		color: $text-color-777;
+	}
+	.ec-single-comment-wrapper {
+		margin-top: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		h5 {
+			color: $text-color-777;
+			font-family: 'Montserrat';
+			font-size: 15px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.ec-blog-user-img{
+			margin-right: 30px;
+			max-width: 4rem;
+			flex: 0 0 4rem;
+			height: 4rem;
+			overflow: hidden;
+			img {
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+		.ec-blog-comment-content {
+			p {
+				margin: 15px 0;
+			}
+		}
+	}
+	.ml-150 {
+		margin-left: 4rem;
+	}
+}
+.ec-blog-cmt-form { 
+	margin-top: 30px;
+	.ec-blog-dec-title {
+		font-weight: 600;
+		color: $text-color-777;
+		margin-bottom: 15px;
+	}
+	.ec-blog-reply-wrapper {
+		.ec-blog-form {
+			.ec-leave-form, .ec-text-leave {
+				input {
+					background: transparent none repeat scroll 0 0;
+					border: 1px solid $default-border-color;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+					color: $text-color-777;
+					height: 45px;
+					margin-bottom: 30px;
+					padding-left: 20px;
+					font-size: 14px;
+					&::placeholder {
+						color: $text-color-777;
+					}
+					&::-ms-input-placeholder {
+						color: $text-color-777;
+					}
+				}
+				textarea {
+					background: transparent none repeat scroll 0 0;
+					border: 1px solid $default-border-color;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+					color: $text-color-777;
+					height: 250px;
+					margin-bottom: 20px;
+					padding: 20px 20px 0 20px;
+					font-size: 14px;
+					&::placeholder {
+						color: $text-color-777;
+					}
+					&::-ms-input-placeholder {
+						color: $text-color-777;
+					}
+				}
+			}
+		}
+	}
+}

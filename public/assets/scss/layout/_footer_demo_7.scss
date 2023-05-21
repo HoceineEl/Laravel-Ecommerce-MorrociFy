@@ -1,0 +1,227 @@
+/*-------------------------------------------------
+    Site Footer Section
+---------------------------------------------------*/
+.ec-footer {
+	color: $white-text-color;
+	background: $footer-bg-color-4;
+	.footer-top {
+		border-top: 1px solid #3c3c3c;
+		.col-sm-12 {
+			width: 20%;
+		}
+		.ec-footer-widget {
+			.ec-footer-heading {
+				font-size: $fontsize-18px;
+				font-weight: $font-weight-700;
+				margin-bottom: 18px;
+				color: $white-text-color;
+				letter-spacing: 0;
+				position: $relative;
+				display: block;
+				width: 100%;
+				padding-bottom: 7px;
+				text-transform: $uppercase;
+				&::before {
+					content: '';
+					position: $absolute;
+					top: auto;
+					right: 0;
+					left: 0;
+					height: 1px;
+					border-bottom: 1px solid $main-primary-color-7;
+					bottom: 0;
+					width: 53px;
+				}
+			}
+			.s-head {
+				display: none;
+			}
+			.ec-footer-links {
+				.ec-footer-link {
+					display: block;
+					margin: 0;
+					line-height: 1.5;
+					border: 0;
+					padding: 0;
+					font-weight: $font-weight-400;
+					font-size: 16px;
+					color: $white-text-color;
+					display: flex;
+					align-items: center;
+					&:not(:last-child) {
+						margin-bottom: 16px;
+					}
+					a {
+						@include ease3;
+						font-size: 16px;
+						line-height: 20px;
+						padding: 0;
+						color: $white-text-color;
+						margin-bottom: 0;
+						display: inline-block;
+						position: $relative;
+						word-break: break-all;
+						opacity: 0.4;
+						letter-spacing: 0;
+						font-weight: 300;
+						&:hover {
+							color: $main-primary-color-7;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		.ec-footer-contact {
+			.ec-footer-widget {
+				.ec-footer-links {
+					li {
+						&:first-child {
+							align-items: self-start;
+						}
+						p {
+							font-weight: 300;
+							opacity: 0.4;
+						}
+					}
+					a {
+						text-transform: unset;
+					}
+					.ec-footer-link {
+						span {
+							width: 35px;
+							flex: 0 0 auto;
+							display: flex;
+							i {
+								font-size: 18px;
+								line-height: 15px;
+								opacity: 0.4;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ec-footer-social {
+			margin-bottom: 0;
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.ec-footer-widget {
+				.ec-footer-links {
+					.ec-footer-link {
+						padding-right: 5px;
+						&:not(:last-child) {
+							margin-bottom: 0;
+						}
+						a {
+							text-transform: $capitalize;
+							display: flex;
+							align-items: center;
+							font-size: 15px;
+							i {
+								font-size: 25px;
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.footer-cat-block {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	.footer-cat-stitle {
+		margin-bottom: 14px;
+		font-weight: $font-weight-600;
+		color: $main-primary-color-7;
+		font-size: 15px;
+		text-transform: $uppercase;
+		letter-spacing: 0.8px;
+	}
+	.footer-cat-title {
+		font-size: 13px;
+		font-weight: $font-weight-600;
+		color: #999;
+		letter-spacing: 0;
+		line-height: 1;
+		text-transform: $uppercase;
+		margin-bottom: 22px;
+	}
+	a, span {
+		color: #787878;
+	}
+	a {
+		padding: 0 5px;
+		text-transform: capitalize;
+		&:hover {
+			color: #999;
+		}
+	}
+	.block {
+		margin: 5px 0;
+	}
+}
+
+
+div#ec_news_signup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.ec-footer-contact {
+	margin-bottom: 30px;
+}
+.svg_img.foo_svg {
+	height: 25px;
+	fill: #ffffff;
+	width: auto;
+	opacity: 0.4;
+}
+.ec-foo-location {
+	.svg_img.foo_svg {
+		margin-top: 3px;
+	}
+}
+.ec-foo-call {
+	.svg_img.foo_svg {
+		height: 24px;
+	}
+}
+.ec-foo-mail {
+	.svg_img.foo_svg {
+		height: 20px;
+	}
+}
+.footer-bottom {
+	padding: 30px 0;
+	border-top: 1px solid #3c3c3c;
+	.ec-copy {
+		color: $white-text-color;
+		font-size: 13px;
+		letter-spacing: 3.2px;
+		text-align: $textcenter;
+		opacity: 0.4;
+		font-weight: 300;
+		a {
+			color: $white-text-color;
+		}
+		.site-name {
+			&:hover {
+				color: $main-primary-color-7;
+			}
+		}
+	}
+}
+.footer-bottom-payment {
+	margin-bottom: 15px;
+}
+.ec-heading-res {
+	display: none;
+}

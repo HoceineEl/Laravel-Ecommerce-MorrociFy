@@ -1,0 +1,67 @@
+/*-------------------------------------------------
+  Vendor Section CSS For Home page 1 (index.html)
+---------------------------------------------------*/
+.ec-vendor-card {
+	margin: 15px 0;
+	padding: 15px;
+	border: 1px solid $border-color-1;
+	background-color: #fff;
+	border-radius: 5px;
+	.ec-vendor-detail {
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		display: flex;
+		flex-direction: row;
+		border-bottom: 1px solid $border-color-1;
+		.ec-vendor-avtar {
+			width: 70px;
+			margin-right: 10px;
+		}
+		.ec-vendor-info {
+			width: calc(100% - 80px);
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			position: relative;
+			.name {
+				font-weight: 500;
+				color: $main-text-color;
+			}
+			.prod-count {
+				margin-bottom: 10px;
+				color: $text-color-999;
+			}
+			.ec-pro-rating {
+				i {
+					font-size: 12px;
+				}
+			}
+			.ec-sale {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				bottom: -1px;
+				font-size: 12px;
+				p {
+					margin: 0;
+					color: $text-color-999;
+				}
+			}
+		}
+	}
+	.ec-vendor-prod {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, calc(100% / 2 - 6px));
+		grid-row-gap: 12px;
+		grid-column-gap: 12px;
+		.ec-prod-img {
+			overflow: hidden;
+			img {
+				@include ease3;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
