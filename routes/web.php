@@ -9,6 +9,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\PaypalPaymentController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,12 +22,13 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-require __DIR__ . '/auth.php';
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::post('/logout', [ProfileController::class, 'logout'])->name('logout');
 });
 
 
@@ -64,3 +66,4 @@ Route::get('/admin/orders', [AdminController::class, 'getOrders'])->name('admin.
 
 // Orders routes
 Route::resource('orders', OrderController::class);
+require __DIR__ . '/auth.php';
